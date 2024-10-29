@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="Поисковик дешевых авиабилетов" name="description"/>
+  <title>Перелеты - дешево</title>
+  <link href="/" rel="stylesheet"/>
+  <link href="images/avianex.svg" rel="icon" sizes="any"/>
+</head>
+
+<body>
+<header>
+  <div>
+    <!-- Логотип-->
+    <img alt="Логотип FlySales" height="70" src="images/avianex.svg" width="70"/>
+    <br/>
+    <b>FlySales</b>
+  </div>
+  <hr color="blue"/>
+  <nav>
+    <ul>
+      <!--"Профиль" - кнопка, будет всплывающее окно-->
+      <li>
+        <button type="button">Профиль</button>
+      </li>
+      <li><a href="../form-support/index.html">Связаться с нами</a></li>
+    </ul>
+  </nav>
+  <form action="#" method="post">
+    <p>
+      <label for="Pay">Валюта</label>
+      <select id="Pay">
+        <option value="eur">EUR</option>
+        <option value="usd">USD</option>
+        <option value="usd">USD</option>
+      </select>
+    </p>
+  </form>
+  <form action="#" method="post">
+    <p>
+      <label for="Language">Язык</label>
+      <select id="Language">
+        <option value="rus">RU</option>
+        <option value="eng">ENG</option>
+        <option value="esp">ESP</option>
+      </select>
+    </p>
+  </form>
+</header>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, magnam!</p>
+<center>
+  <br/>
+  <br/>
+  <br/>
+  <hr color="red" size="1"/>
+  <main>
+    <h2>ПОИСК АВИАБИЛЕТОВ</h2>
+    <form action="#" method="post">
+      <label for="direction_1">
+        <input checked id="direction_1" name="direction" type="radio" value="oba"/>Туда и обратно
+      </label>
+      <label for="direction_2">
+        <input id="direction_2" name="direction" type="radio" value="odin"/>В одну сторону</label>
+      <br/>
+      <br/>
+      <label>
+        <input list="From" placeholder="Откуда летим?" required/>
+      </label>
+      <datalist id="From">
+        <option value="Уфа">Ufa</option>
+        <option value="Весь мир">Everywhere</option>
+      </datalist>
+      <label>
+        <input list="Where" placeholder="Куда летим?" required/>
+      </label>
+      <datalist id="Where">
+        <option value="Бразилия">Brazil</option>
+        <option value="Весь мир">Everywhere</option>
+      </datalist>
+      <label>
+        <input name="depart" required type="date"/>
+      </label>
+      <label>
+        <input name="return" type="date"/>
+      </label>
+      <button formtarget="_blank" type="submit" value="Найти">Найти билет</button>
+      <p>
+      <footer>
+        <button type="button">Сложный маршрут</button>
+      </footer>
+    </form>
+  </main>
+  <hr color="red" size="1"/>
+</center>
+<!--Сделать слайдеры (направо-налево) табло аэропортов внизу страницы-->
+<br/>
+<br/>
+<br/>
+<section>
+  <header>
+    <h2>Онлайн табло аэропортов</h2></header>
+  <article>
+    <h3><a href="/" target="_blank"> Аэропорт Пулково</a></h3>
+  </article>
+  <article>
+    <h3><a href="/" target="_blank"> Аэропорт Шереметьево</a></h3>
+  </article>
+</section>
+<script src="/"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>Форма поддержки</title>
+  <link href="/" rel="stylesheet"/>
+</head>
+
+<body>
+<a href="git.html">Главная</a>
+
+<section>
+  <h1>Обращение в поддержку</h1>
+  <form action="#" enctype="multipart/form-data" method="post">
+    <p>
+      <label>Тема обращения <em>(обязательное)</em>
+        <br/>
+        <select required>
+          <option disabled selected value="">Выбрать</option>
+          <option value="/">Пустышка</option>
+        </select>
+      </label>
+    </p>
+    <p>
+      <label>Номер заказа <em>(опциональное)</em>
+        <br/>
+        <select>
+          <option disabled selected value="/">Выбрать</option>
+          <option value="/">Пустышка</option>
+        </select>
+      </label>
+    </p>
+    <p>
+      <label>Ваше имя <em>(обязательное)</em>
+        <br/>
+        <input inputmode="name" required type="text">
+      </label>
+    </p>
+    <p>
+      <label for="email">Электронная почта <em>(обязательное)</em>
+        <br/>
+        <input autocomplete="email" id="email" inputmode="email" required type="email">
+      </label>
+    </p>
+    <p>
+      <label for="telephone">Телефон <em>(обязательное)</em>
+        <br/>
+        <input autocomplete="tel" id="telephone" inputmode="tel" maxlength="21" required type="tel">
+      </label>
+    </p>
+    <label for="question">Ваш вопрос <em>(обязательное)</em></label>
+    <br/>
+    <textarea cols="50" id="question" maxlength="10000" placeholder="Чем мы можем помочь" required rows="10"></textarea>
+    <br/> 0\10000
+    <p>
+      <label for="file">Выберите файл</label>
+      <input id="file" multiple type="file">
+    <p>
+      <button type="submit" value="Отправить">Отправить</button>
+    </p>
+  </form>
+</section>
+<ul>
+  <li>Пример 1</li>
+  <li>Пример 2</li>
+  <li>Пример 3</li>
+</ul>
+
+<script src="/"></script>
+</body>
+
+</html>
